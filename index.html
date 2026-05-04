@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#003ea8",
+                    "outline": "#737686",
+                    "secondary-fixed": "#d3e4fe",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "inverse-surface": "#2e3039",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f0f0fb",
+                    "primary-fixed": "#dbe1ff",
+                    "on-background": "#191b23",
+                    "surface-variant": "#e1e2ed",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-highest": "#e1e2ed",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdbcd",
+                    "tertiary": "#943700",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-tertiary-container": "#ffede6",
+                    "surface-container-high": "#e7e7f3",
+                    "surface-container-low": "#f3f3fe",
+                    "on-surface-variant": "#434655",
+                    "surface-container": "#ededf9",
+                    "secondary": "#505f76",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#00174b",
+                    "on-secondary-container": "#54647a",
+                    "inverse-primary": "#b4c5ff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "on-primary-container": "#eeefff",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-secondary-fixed": "#0b1c30",
+                    "secondary-container": "#d0e1fb",
+                    "primary-container": "#2563eb",
+                    "primary": "#004ac6",
+                    "on-surface": "#191b23",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#bc4800",
+                    "background": "#faf8ff",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "surface-dim": "#d9d9e5",
+                    "outline-variant": "#c3c6d7",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#faf8ff",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#faf8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "margin": "32px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "h3": ["Space Grotesk"],
+                    "body-lg": ["Space Grotesk"],
+                    "label-sm": ["Space Grotesk"],
+                    "h2": ["Space Grotesk"],
+                    "h1": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf8ff;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-surface-variant">
+<nav class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-primary font-h1">AI IT Services</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-medium text-primary border-b-2 border-primary pb-1 active:scale-95 transition-all duration-200" href="#">Home</a>
+<a class="font-medium text-on-surface-variant hover:text-primary active:scale-95 transition-all duration-200" href="#">Services</a>
+<a class="font-medium text-on-surface-variant hover:text-primary active:scale-95 transition-all duration-200" href="#">Industries</a>
+<a class="font-medium text-on-surface-variant hover:text-primary active:scale-95 transition-all duration-200" href="#">Case Studies</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs rounded-lg font-medium text-sm active:scale-95 transition-all duration-200">
+            Get a Consultation
+        </button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-margin py-xl grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest bg-primary-container/20 px-sm py-xs rounded-full inline-block">Practical Innovation</span>
+<h1 class="font-h1 text-h1 text-on-surface">Practical AI for Real-World Business Problems</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                We bridge the gap between AI hype and operational reality. Our custom machine learning solutions and intelligent automation frameworks empower technical leaders to solve complex bottlenecks with surgical precision.
+            </p>
+<div class="flex flex-col sm:flex-row gap-sm pt-sm">
+<button class="bg-primary-container text-on-primary px-lg py-md rounded-xl font-medium hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+                    Start Your Transformation <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="border-2 border-outline text-on-surface px-lg py-md rounded-xl font-medium hover:bg-surface-container-low transition-all">
+                    View Case Studies
+                </button>
+</div>
+</div>
+<div class="relative h-[550px] w-full bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
+<img alt="Corporate AI Interface" class="w-full h-full object-cover grayscale opacity-90" data-alt="A sophisticated macro view of high-end server hardware in a data center, illuminated with subtle blue and white LED pulses that reflect off brushed metal surfaces. The aesthetic is clean, corporate, and technologically advanced, utilizing a palette of deep slates and cool greys. The atmosphere is professional and silent, emphasizing reliability and computational power through sharp focus and shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWvdK9kgLsmDgiyU7k1kDAZSn1nLUmHTjrKSj0ii-u-XOtcL3lDXXTcvmqu27uo0oGhYSwyJ56lrSEJNGrnSdF1JYJ_JPFMgVr7N5IQDIAX4aAdd7uKMDk6XGObZaskEyXxy2b44iKLm3QrGIgV9GP0-1P09spucILJngam5CQ3qC-xuUKATErgsetWbZm6LeZKCMkBc-DPDxLxOxC4pSlCpVffz_mYKS8R4fsk5HVJ1Bl6RoFRoUo-1We5XJS6b1VE-wmp7W85YRl"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+<!-- Insight Card Overlay -->
+<div class="absolute bottom-md left-md right-md bg-white/95 backdrop-blur-sm p-md rounded-xl border-l-8 border-primary shadow-xl">
+<p class="font-label-sm text-label-sm text-primary mb-2 font-bold">OPERATIONAL INSIGHT</p>
+<p class="font-body-md text-on-surface font-semibold">92% of our clients achieve ROI within the first 6 months of automation deployment.</p>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="bg-surface-container-low py-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-lg text-center md:text-left">
+<h2 class="font-h2 text-h2 text-on-surface">Core Expertise</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl">Strategic implementation focused on measurable performance through state-of-the-art architectures.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Service 1: AI Consulting -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-surface-variant p-lg rounded-xl flex flex-col md:flex-row gap-lg group hover:border-primary hover:shadow-xl transition-all duration-300">
+<div class="flex-1 space-y-sm">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="strategy">strategy</span>
+<h3 class="font-h3 text-h3 text-on-surface">AI Consulting</h3>
+<p class="font-body-md text-on-surface-variant">We don't just recommend tools; we build roadmaps. From feasibility studies to architectural design, we ensure your AI strategy aligns with your infrastructure.</p>
+<ul class="space-y-3 pt-xs">
+<li class="flex items-center gap-2 text-sm font-semibold text-on-surface"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" data-weight="fill">check_circle</span> Readiness Assessment</li>
+<li class="flex items-center gap-2 text-sm font-semibold text-on-surface"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" data-weight="fill">check_circle</span> Ethical Framework Design</li>
+<li class="flex items-center gap-2 text-sm font-semibold text-on-surface"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" data-weight="fill">check_circle</span> Legacy System Integration</li>
+</ul>
+</div>
+<div class="w-full md:w-2/5 bg-surface-container rounded-xl overflow-hidden border border-surface-variant h-56 md:h-full">
+<img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional consultants in a bright, modern glass-walled office space engaged in a strategic planning session. The lighting is high-key and natural, highlighting a clean Swiss-minimalist aesthetic. The scene features people reviewing complex diagrams on a minimalist digital screen, captured in a neutral palette of whites, slates, and crisp blue accents. The mood is focused, collaborative, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnog7FB2dTUk1zfDlEGoNihk1nhnskgeAuWtHGKpznVgKFOE4d4QThuZGrqjTp2m9XVyfLY0_bFHRROMcthgYyFulxddeGpnICfnxGML4vk27WJVWPBpzKjHU5tHtVCUsOBAueNKN0IH0o0j9W8arSYkOfCHd3vVk28-KuuwOdp7T6kjhXjyOPz1WMkKqe6LZGey0jU0-_RYDJ6TBoBrxFxhVa2MRoTNThmMvdIXNSSaJgdtDgxH5uFkkgFblR6wavv0LL9kD8dG9k"/>
+</div>
+</div>
+<!-- Service 2: Custom Software -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-surface-variant p-lg rounded-xl space-y-sm hover:border-primary hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="code_blocks">code_blocks</span>
+<h3 class="font-h3 text-h3 text-on-surface">Custom Software</h3>
+<p class="font-body-md text-on-surface-variant">Bespoke applications designed for high information density and technical performance.</p>
+<div class="pt-md">
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary px-sm py-1 text-xs font-bold rounded-full">Python</span>
+<span class="bg-primary/10 text-primary px-sm py-1 text-xs font-bold rounded-full">TensorFlow</span>
+<span class="bg-primary/10 text-primary px-sm py-1 text-xs font-bold rounded-full">React</span>
+</div>
+</div>
+</div>
+<!-- Service 3: Automation -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-surface-variant p-lg rounded-xl space-y-sm hover:border-primary hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="robot_2">robot_2</span>
+<h3 class="font-h3 text-h3 text-on-surface">Intelligent Automation</h3>
+<p class="font-body-md text-on-surface-variant">Replacing repetitive tasks with deterministic AI agents that learn from your unique data streams.</p>
+</div>
+<!-- Service 4: ML Engineering -->
+<div class="md:col-span-8 bg-primary-container text-on-primary p-lg rounded-xl flex flex-col justify-between relative overflow-hidden group shadow-lg shadow-primary-container/30">
+<div class="relative z-10 space-y-sm">
+<h3 class="font-h3 text-h3 text-white">MLOps &amp; Engineering</h3>
+<p class="font-body-lg text-white/90 max-w-lg">Scale your models from prototypes to production-grade environments with our rigorous MLOps pipelines. We ensure stability, observability, and performance.</p>
+</div>
+<button class="relative z-10 self-start mt-lg text-white font-medium underline underline-offset-8 hover:text-white/80 transition-colors">Learn more about our pipeline architecture</button>
+<div class="absolute -right-12 -bottom-12 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[240px]" data-icon="settings_input_component">settings_input_component</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="max-w-7xl mx-auto px-margin py-xl">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-md border-y-2 border-surface-container py-xl">
+<div class="text-center md:text-left space-y-2">
+<p class="text-5xl font-h1 text-primary">500+</p>
+<p class="font-label-sm text-on-surface-variant font-bold tracking-widest">MODELS DEPLOYED</p>
+</div>
+<div class="text-center md:text-left space-y-2">
+<p class="text-5xl font-h1 text-primary">35%</p>
+<p class="font-label-sm text-on-surface-variant font-bold tracking-widest">AVG. COST REDUCTION</p>
+</div>
+<div class="text-center md:text-left space-y-2">
+<p class="text-5xl font-h1 text-primary">24/7</p>
+<p class="font-label-sm text-on-surface-variant font-bold tracking-widest">SYSTEM MONITORING</p>
+</div>
+<div class="text-center md:text-left space-y-2">
+<p class="text-5xl font-h1 text-primary">15ms</p>
+<p class="font-label-sm text-on-surface-variant font-bold tracking-widest">AVG. INFERENCE LATENCY</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-margin pb-xl">
+<div class="bg-surface-container rounded-2xl p-lg md:p-xl flex flex-col items-center text-center space-y-md border border-surface-variant shadow-inner">
+<h2 class="font-h2 text-h2 text-on-surface max-w-2xl">Ready to Solve Your Most Complex Data Challenges?</h2>
+<p class="font-body-lg text-on-surface-variant max-w-xl">Book a 30-minute technical consultation with our engineering leads. No sales fluff, just architecture and feasibility.</p>
+<div class="pt-md">
+<button class="bg-primary text-on-primary px-xl py-md rounded-xl font-bold text-lg hover:brightness-110 shadow-lg shadow-primary/30 active:scale-95 transition-all">
+                    Schedule Consultation
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high border-t border-surface-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-margin py-xl max-w-7xl mx-auto text-sm">
+<div class="space-y-6">
+<span class="text-2xl font-bold text-primary font-h1 tracking-tighter">AI IT Services</span>
+<p class="text-on-surface-variant leading-relaxed">Pioneering practical machine learning solutions for modern enterprise infrastructure. Built for reliability, designed for speed.</p>
+</div>
+<div class="space-y-6">
+<p class="font-bold text-on-surface uppercase tracking-widest">Expertise</p>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">AI Services</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Industries</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<p class="font-bold text-on-surface uppercase tracking-widest">Support</p>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Engineering Careers</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<p class="font-bold text-on-surface uppercase tracking-widest">Newsletter</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Enter your email" type="email"/>
+<button class="bg-primary text-white p-3 rounded-lg hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin py-8 border-t border-surface-variant/50 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-xs font-medium">© 2024 AI IT Services. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="language">language</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="share">share</span>
+</div>
+</div>
+</footer>
+</body></html>

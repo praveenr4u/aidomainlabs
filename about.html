@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#003ea8",
+                        "outline": "#737686",
+                        "secondary-fixed": "#d3e4fe",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#0053db",
+                        "inverse-surface": "#2e3039",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f0f0fb",
+                        "primary-fixed": "#dbe1ff",
+                        "on-background": "#191b23",
+                        "surface-variant": "#e1e2ed",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-tertiary-fixed": "#360f00",
+                        "surface-container-highest": "#e1e2ed",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdbcd",
+                        "tertiary": "#943700",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-tertiary-container": "#ffede6",
+                        "surface-container-high": "#e7e7f3",
+                        "surface-container-low": "#f3f3fe",
+                        "on-surface-variant": "#434655",
+                        "surface-container": "#ededf9",
+                        "secondary": "#505f76",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#00174b",
+                        "on-secondary-container": "#54647a",
+                        "inverse-primary": "#b4c5ff",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-primary-container": "#eeefff",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-secondary-fixed": "#0b1c30",
+                        "secondary-container": "#d0e1fb",
+                        "primary-container": "#2563eb",
+                        "primary": "#004ac6",
+                        "on-surface": "#191b23",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#bc4800",
+                        "background": "#faf8ff",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-dim": "#d9d9e5",
+                        "outline-variant": "#c3c6d7",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf8ff",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#faf8ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "margin": "32px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"],
+                        "h3": ["Space Grotesk"],
+                        "body-lg": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "label-sm": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "headline-sm": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .insight-card {
+            border-left: 4px solid #2563eb;
+        }
+        body {
+            background-color: #faf8ff;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-on-surface font-h3">AI IT Services</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-medium">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Services</a>
+<a class="text-primary border-b-2 border-primary pb-1" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Case Studies</a>
+</nav>
+<button class="bg-primary text-on-primary px-5 py-2.5 font-medium rounded-xl active:scale-95 transition-all duration-200 shadow-sm hover:shadow-md">
+                Get a Consultation
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="py-xl px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<span class="text-label-sm font-semibold text-primary-container bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">Our Mission</span>
+<h1 class="text-display-lg font-h1 text-on-surface max-w-xl">Practical AI Adoption.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
+                        We strip away the hype to deliver architectural reliability and measurable business impact. Our goal isn't just to implement AI—it's to integrate it into the core of your operations.
+                    </p>
+</div>
+<div class="relative h-[400px] lg:h-[500px] bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A high-tech server room with sleek, minimalist black server racks illuminated by soft blue linear LED lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdjIUsbC29FfBOdSmUr4yJldsq_Ymk8GSYFxaH7ZUqrUwnpHQZFjUSFNcDD97K0kgCIfyPWiKWUfvkFOn0KgRU1J0EliFA8y57D3Gmz_GWJj_gv4ctXm4059fM8ed8vHTrXmD1bfyiMjVP174UkH4xbt_tjGVFgQZZJi-I5_Esiomf9DxxUtva47fO8WwyygZWXejO2GhVGRLDWQnVnqRKZIsfYXFjlYWv3fLjpT0zSDByC_g3RdYIA-MC5ejBkBMybyzWq4XbLfd9"/>
+</div>
+</div>
+</section>
+<!-- Company Story (Asymmetric Bento) -->
+<section class="bg-surface-container-lowest py-xl px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-lg">
+<h2 class="text-headline-md font-h2 text-on-surface">The Genesis of Clarity</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant p-md rounded-xl space-y-sm shadow-sm">
+<h3 class="text-headline-sm font-h3 text-primary">From Research to Reality</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                            Founded in 2019, AI IT Services began as a specialized consultancy focused on bridging the gap between theoretical machine learning and legacy enterprise architecture. We noticed a recurring pattern: companies were investing millions in AI prototypes that never reached production. 
+                        </p>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                            We pivoted to focus exclusively on 'Practical Adoption'—ensuring that every line of code serves a business metric. Today, we are a team of architects, engineers, and strategists who believe that AI is a tool for precision, not a solution in search of a problem.
+                        </p>
+</div>
+<div class="md:col-span-4 bg-primary-container text-on-primary-container p-md rounded-xl flex flex-col justify-end shadow-sm">
+<span class="text-display-lg font-h1 text-on-primary-container">85%</span>
+<p class="text-body-md font-body-md opacity-90">Of our clients reach full-scale deployment within the first 12 months.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-low p-md border border-outline-variant rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary mb-sm" data-icon="architecture">architecture</span>
+<h4 class="text-label-sm font-bold uppercase text-on-surface mb-xs">Systems First</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Building the data foundations that make AI sustainable.</p>
+</div>
+<div class="md:col-span-8 relative rounded-xl overflow-hidden h-48 md:h-auto shadow-sm border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A close-up view of a professional engineer's hands working on a high-precision circuit board." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAD_Xtf4fbmCY1spCrnw8FS-bFcWXloKtc0_yXf8Wldh1EL-mFm8rsZr_VpReXNCJbkqiXvxvkjzybmOwHxL6RNFBRfwbL97iAfZjuJG_6TkkPoZp4ZzHcgAfySyPCUs6v5PLQglxiMaNV7C-Zpo15UZAAtBS1IVaRi06nGheBQDnjS_rO29jngCldGQkMPlZR65Qv6FriRKbnCWWTYjF00euUxfpzmKuhK2bdmo5LV7Ohx1vAihQC8QzE-bNbgds3y6T4DaMGecfQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Measurable Outcomes (Insight Cards) -->
+<section class="py-xl px-6 max-w-7xl mx-auto">
+<div class="text-center mb-lg">
+<h2 class="text-headline-md font-h2 text-on-surface mb-sm">Our Focus: Outcomes Over Output</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">We measure our success by the KPIs of our partners. AI is only valuable if it moves the needle.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="insight-card bg-white p-md border border-outline-variant rounded-xl shadow-sm">
+<span class="text-label-sm font-bold text-primary">EFFICIENCY</span>
+<h3 class="text-headline-sm font-h3 text-on-surface mt-sm mb-xs">Cost Reduction</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Automating repetitive technical debt to reallocate human talent to high-value innovation.</p>
+</div>
+<div class="insight-card bg-white p-md border border-outline-variant rounded-xl shadow-sm">
+<span class="text-label-sm font-bold text-primary">VELOCITY</span>
+<h3 class="text-headline-sm font-h3 text-on-surface mt-sm mb-xs">Deployment Speed</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Reducing the time-to-market for AI-driven features from months to weeks through MLOps excellence.</p>
+</div>
+<div class="insight-card bg-white p-md border border-outline-variant rounded-xl shadow-sm">
+<span class="text-label-sm font-bold text-primary">RELIABILITY</span>
+<h3 class="text-headline-sm font-h3 text-on-surface mt-sm mb-xs">Error Mitigation</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Implementing rigorous testing frameworks to ensure AI hallucinations are managed and risks are mitigated.</p>
+</div>
+</div>
+</section>
+<!-- Founder Overview -->
+<section class="bg-surface-container-low py-xl px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<span class="text-label-sm font-semibold text-primary-container bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">Leadership</span>
+<h2 class="text-headline-md font-h2 text-on-surface mt-sm mb-md">Guided by Technical Rigor</h2>
+<div class="space-y-sm">
+<h3 class="text-headline-sm font-h3 text-primary">Marcus Thorne, Founder &amp; CEO</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                                With two decades of experience in distributed systems and a PhD in Artificial Intelligence from MIT, Marcus founded AI IT Services to solve the "last mile" problem of AI implementation. He believes that the most powerful technology is often the most invisible.
+                            </p>
+<div class="flex gap-md pt-sm">
+<a class="text-primary hover:underline font-medium flex items-center gap-1" href="#">LinkedIn <span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span></a>
+<a class="text-primary hover:underline font-medium flex items-center gap-1" href="#">Technical Blog <span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span></a>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="aspect-square bg-white border border-outline-variant rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of Marcus Thorne." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAfXpGB6aDcQmNXhbl-gECE9P5qNj8iaQe74BJf01m9i5Kpb7tpjPidBItRTR0JA1AztoU5DCi_Zt5RSM8n5sS_cMgDsaCCpLh2f0O0qBZ4PlbgkLWUIbtRtfPaU1HkrourihS8z9_mCpGKTY87LMKPN9Exs699aHFjxW-DrsSkMK8UeGZ31U-0YWoq12GvV5TIaddWePNW9TQ22Qpd0pZH5cz3g_lH6_s2x_oiglTJEGZqJL01S2JI3iF7oJvwrJfaGV6lWVB2CCz"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-6 text-center max-w-3xl mx-auto">
+<h2 class="text-headline-md font-h2 text-on-surface mb-md">Ready for a pragmatic approach to AI?</h2>
+<div class="flex flex-col md:flex-row justify-center gap-md">
+<button class="bg-primary text-on-primary px-lg py-sm font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">Work With Us</button>
+<button class="border border-outline text-primary px-lg py-sm font-semibold rounded-xl hover:bg-primary/5 transition-all duration-200">View Case Studies</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg px-6 py-12 max-w-7xl mx-auto text-sm">
+<div class="space-y-4">
+<span class="text-xl font-bold text-on-surface tracking-tighter">AI IT Services</span>
+<p class="text-on-surface-variant">Transforming enterprise landscapes through practical, measurable AI adoption strategies.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-on-surface uppercase tracking-wider text-xs">Quick Links</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="font-bold text-primary" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Case Studies</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-on-surface uppercase tracking-wider text-xs">Support</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="space-y-4">
+<span class="font-bold text-on-surface uppercase tracking-wider text-xs">Stay Updated</span>
+<div class="flex gap-2">
+<input class="bg-surface-container-low border border-outline-variant px-4 py-2 w-full focus:ring-2 focus:ring-primary outline-none rounded-xl" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary p-2 rounded-xl material-symbols-outlined" data-icon="send">send</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 py-6 border-t border-outline-variant text-center md:text-left">
+<p class="text-on-surface-variant text-sm">© 2024 AI IT Services. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#003ea8",
+                    "outline": "#737686",
+                    "secondary-fixed": "#d3e4fe",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "inverse-surface": "#2e3039",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f0f0fb",
+                    "primary-fixed": "#dbe1ff",
+                    "on-background": "#191b23",
+                    "surface-variant": "#e1e2ed",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container-highest": "#e1e2ed",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdbcd",
+                    "tertiary": "#943700",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-tertiary-container": "#ffede6",
+                    "surface-container-high": "#e7e7f3",
+                    "surface-container-low": "#f3f3fe",
+                    "on-surface-variant": "#434655",
+                    "surface-container": "#ededf9",
+                    "secondary": "#505f76",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#00174b",
+                    "on-secondary-container": "#54647a",
+                    "inverse-primary": "#b4c5ff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "on-primary-container": "#eeefff",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-secondary-fixed": "#0b1c30",
+                    "secondary-container": "#d0e1fb",
+                    "primary-container": "#2563eb",
+                    "primary": "#004ac6",
+                    "on-surface": "#191b23",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#bc4800",
+                    "background": "#faf8ff",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "surface-dim": "#d9d9e5",
+                    "outline-variant": "#c3c6d7",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#faf8ff",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#faf8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "margin": "32px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "h3": ["Space Grotesk"],
+                    "body-lg": ["Space Grotesk"],
+                    "label-sm": ["Space Grotesk"],
+                    "h2": ["Space Grotesk"],
+                    "h1": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .insight-accent {
+        border-left: 4px solid #2563eb;
+      }
+      body {
+        min-height: max(884px, 100dvh);
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest sticky top-0 z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-on-surface font-h1">AI IT Services</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Industries</a>
+<a class="text-on-surface border-b-2 border-primary pb-1 transition-all duration-200" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded-lg font-medium active:scale-95 transition-all duration-200">Get a Consultation</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-xl">
+<!-- Hero Section -->
+<section class="mb-xl text-center md:text-left">
+<h1 class="text-h1 mb-md text-on-surface max-w-3xl">Tangible Outcomes Through Practical AI Integration</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl">Explore how we help global enterprises leverage specialized AI models and automated infrastructure to solve complex operational challenges.</p>
+</section>
+<!-- Case Studies Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured Case Study -->
+<article class="md:col-span-12 lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col md:flex-row">
+<div class="md:w-1/2 relative h-64 md:h-auto">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated data visualization dashboard showing complex neural network traffic patterns in real-time." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaeSh8V28o1JXE__MI7QYiZcMYsYwUTC1UrpV_dG36r-cZM3ivZZCtyqH26q4qP-gaTzGuuuWTkYIrvrjxyCIKFEibMBj5tfqZ3xXp57vOTWVbj9bXL527ELhXux4GM1ft7c86QQWl3I7HBMLTaL61QKemm2d-s7hFmqoLSYUU6bEeyoZQyIh6ZhoJXt5ntT1h-96qrc2EUGN8Z_FV7g5Gg8RVPH-16XFy56U9VWgCUylckbaNY-RUYjuQ4gp0FWb61Wz_A8HqeiyM"/>
+</div>
+<div class="md:w-1/2 p-md flex flex-col justify-between">
+<div>
+<span class="text-label-sm font-semibold text-primary mb-base inline-block uppercase">Logistics &amp; Supply Chain</span>
+<h2 class="text-h2 text-on-surface mb-md">Optimizing Global Route Efficiency with Predictive Neural Engines</h2>
+<div class="mb-sm">
+<h3 class="text-label-sm font-semibold text-on-surface-variant mb-xs">PROBLEM</h3>
+<p class="text-body-md text-on-surface">Fragile supply chains resulting in 18% wasted fuel and 12-hour average delay across maritime routes during peak season.</p>
+</div>
+<div class="mb-sm">
+<h3 class="text-label-sm font-semibold text-on-surface-variant mb-xs">SOLUTION</h3>
+<p class="text-body-md text-on-surface">Deployment of a custom-trained Transformer model for multi-variable weather and port-congestion forecasting.</p>
+</div>
+</div>
+<div class="insight-accent p-sm bg-surface-container-low mt-md rounded-r-lg">
+<h3 class="text-label-sm font-semibold text-primary-container bg-primary-container/10 px-2 py-0.5 rounded inline-block mb-xs">OUTCOME</h3>
+<p class="text-h3 text-on-surface">22% Reduction in Fuel Costs</p>
+<p class="text-body-md text-on-surface-variant">Annualized savings of $4.2M and 99.8% on-time delivery rate.</p>
+</div>
+</div>
+</article>
+<!-- Case Study 2 -->
+<article class="md:col-span-6 lg:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional close-up of a high-end tablet displaying encrypted financial transaction data." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ4g4hv1vY0zlb5-SbYMDqVcj-WVN4RFeX73dyEo8uZd0w6W_Wz7GAChi8YIRUCNt-4MbaokA2MviG2_0Ny83Owxv9hcmYAe_HLvg_AueIHvVtiPuAv9LB6TFfOupPCZ4dyFfQi27_jkfxFO0pa_OwqR134DchRE0dAQqEMoHRgCknylTj3q3x42FG9pwhg2Dqq2YZgpbEiVSSkTNR7zh7s9Lr-jEFfnTMFOBLoi1tYYj_HLTv6AdgNOxZlcwLlGgD4-MdF8OZIiVf"/>
+</div>
+<div class="p-md flex-1 flex flex-col">
+<span class="text-label-sm font-semibold text-primary mb-base inline-block uppercase">FinTech</span>
+<h2 class="text-h3 text-on-surface mb-sm">Fraud Detection At Scale</h2>
+<p class="text-body-md text-on-surface-variant mb-md">Reducing false positives in real-time transaction monitoring for a Tier-1 retail bank.</p>
+<div class="mt-auto pt-md border-t border-outline-variant flex items-center justify-between">
+<div>
+<p class="text-label-sm font-semibold text-on-surface-variant">ACCURACY INCREASE</p>
+<p class="text-h3 font-bold text-on-surface">+45%</p>
+</div>
+<a class="text-primary hover:underline font-semibold text-sm flex items-center gap-1" href="#">
+                        Read Case Study <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Case Study 3 -->
+<article class="md:col-span-6 lg:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A clean sterile industrial environment where a robotic arm is performing precision quality inspection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCaBxjhM6_gYN5X6Dwo8K0yFnAskHVWksHTv3RECpTvfg7--cVWSdrAbi6jJKBGvpgzuU0SjokzfcSnYuo5ff2auXVSRW_rwa7GUXBT4DrDYQajDBoTN37WlEef5FldyJ7738MFb-E4cGWs47W28idFS-Xei1EOz7md4mFhMFxQqf_6v6hjaxouCE3KN8rusyBsoabcivddCqZpb0X6lAbeUVJNptqwX93awelJVEKCu6tN90v8QEQnyvg0mHvWSerpuU0FaECANkO"/>
+</div>
+<div class="p-md flex-1 flex flex-col">
+<span class="text-label-sm font-semibold text-primary mb-base inline-block uppercase">Manufacturing</span>
+<h2 class="text-h3 text-on-surface mb-sm">Automated Defect Vision</h2>
+<p class="text-body-md text-on-surface-variant mb-md">Implementing computer vision for 24/7 assembly line inspection with zero downtime migration.</p>
+<div class="mt-auto pt-md border-t border-outline-variant flex items-center justify-between">
+<div>
+<p class="text-label-sm font-semibold text-on-surface-variant">DEFECT REDUCTION</p>
+<p class="text-h3 font-bold text-on-surface">92%</p>
+</div>
+<a class="text-primary hover:underline font-semibold text-sm flex items-center gap-1" href="#">
+                        Read Case Study <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Case Study 4 -->
+<article class="md:col-span-12 lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col md:flex-row-reverse">
+<div class="md:w-1/2 relative h-64 md:h-auto">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A professional healthcare setting showing an AI diagnostic interface assisting a radiologist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-WqEz6AnmqUcNRFqHooGm5VfehitPvTMv_mANvoTyrX4gAUJsxFOt4Jfw5w8IEqYnM1SUZrETf90nYOSHxlZDUO3W7POucPXY5Y_dOAhEcCzPCyS4XEkjHiT2oqlPx4vfD-1BhB7lxWbptawRmaKQP5nqTneqlL2TG5t6aBJLnaFKX4y7xtWXZvnAq_ZPs1jAeRc7-1V2bld3b7JQ9sON-wy0BDH7uHZgBvAC8ug6ApYptqraw96yYXcvAtse-tYxu6EOA07hmT3c"/>
+</div>
+<div class="md:w-1/2 p-md flex flex-col justify-between">
+<div>
+<span class="text-label-sm font-semibold text-primary mb-base inline-block uppercase">Healthcare</span>
+<h2 class="text-h2 text-on-surface mb-md">Accelerating Diagnostic Accuracy</h2>
+<div class="mb-sm">
+<h3 class="text-label-sm font-semibold text-on-surface-variant mb-xs">PROBLEM</h3>
+<p class="text-body-md text-on-surface">Radiology department backlogs leading to a 5-day average wait time for non-critical scans.</p>
+</div>
+<div class="mb-sm">
+<h3 class="text-label-sm font-semibold text-on-surface-variant mb-xs">SOLUTION</h3>
+<p class="text-body-md text-on-surface">Integration of an AI co-pilot that pre-sorts and highlights anomalies in scans for specialist review.</p>
+</div>
+</div>
+<div class="insight-accent p-sm bg-surface-container-low mt-md rounded-r-lg">
+<h3 class="text-label-sm font-semibold text-primary-container bg-primary-container/10 px-2 py-0.5 rounded inline-block mb-xs">OUTCOME</h3>
+<p class="text-h3 text-on-surface">80% Faster Triage</p>
+<p class="text-body-md text-on-surface-variant">Wait times reduced to 4 hours with a 15% increase in early-stage detection.</p>
+</div>
+</div>
+</article>
+</div>
+<!-- Metric Summary Section -->
+<section class="mt-xl py-xl border-t border-outline-variant">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="text-center md:text-left">
+<p class="text-h1 text-primary">400+</p>
+<p class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">PROJECTS DELIVERED</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-h1 text-primary">$240M</p>
+<p class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">CLIENT COST SAVINGS</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-h1 text-primary">99.9%</p>
+<p class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">SYSTEM UPTIME</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-h1 text-primary">12ms</p>
+<p class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">AVG MODEL LATENCY</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-xl bg-primary-container text-on-primary-container rounded-xl p-xl text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-h1 mb-md">Ready to build your success story?</h2>
+<p class="text-body-lg text-primary-fixed-dim mb-lg max-w-2xl mx-auto">Our engineers are ready to audit your current infrastructure and identify the most impactful AI opportunities.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-surface-container-lowest text-primary px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">Schedule Infrastructure Audit</button>
+<button class="border border-outline text-on-primary-container px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all">View All Industries</button>
+</div>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary opacity-20 blur-3xl rounded-full"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 py-12 max-w-7xl mx-auto text-sm">
+<div class="col-span-1">
+<span class="text-lg font-bold text-on-surface block mb-4">AI IT Services</span>
+<p class="text-on-surface-variant max-w-xs">Building resilient, AI-powered futures for the world's most demanding enterprises.</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Capabilities</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">MLOps Implementation</li>
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Custom LLM Training</li>
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Cloud Modernization</li>
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Data Engineering</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Company</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Case Studies</li>
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Industries</li>
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Privacy Policy</li>
+<li class="hover:text-primary transition-colors duration-200 cursor-pointer">Terms of Service</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Contact</h4>
+<p class="text-on-surface-variant mb-2">consult@ai-itservices.com</p>
+<p class="text-on-surface-variant">San Francisco, CA 94105</p>
+<div class="flex gap-4 mt-6">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer" data-icon="hub">hub</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer" data-icon="public">public</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 py-8 border-t border-outline-variant text-center md:text-left">
+<p class="text-on-surface-variant text-sm">© 2024 AI IT Services. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

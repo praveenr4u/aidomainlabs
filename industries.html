@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#003ea8",
+                        "outline": "#737686",
+                        "secondary-fixed": "#d3e4fe",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#0053db",
+                        "inverse-surface": "#2e3039",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f0f0fb",
+                        "primary-fixed": "#dbe1ff",
+                        "on-background": "#191b23",
+                        "surface-variant": "#e1e2ed",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-tertiary-fixed": "#360f00",
+                        "surface-container-highest": "#e1e2ed",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdbcd",
+                        "tertiary": "#943700",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-tertiary-container": "#ffede6",
+                        "surface-container-high": "#e7e7f3",
+                        "surface-container-low": "#f3f3fe",
+                        "on-surface-variant": "#434655",
+                        "surface-container": "#ededf9",
+                        "secondary": "#505f76",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#00174b",
+                        "on-secondary-container": "#54647a",
+                        "inverse-primary": "#b4c5ff",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-primary-container": "#eeefff",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-secondary-fixed": "#0b1c30",
+                        "secondary-container": "#d0e1fb",
+                        "primary-container": "#2563eb",
+                        "primary": "#004ac6",
+                        "on-surface": "#191b23",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#bc4800",
+                        "background": "#faf8ff",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-dim": "#d9d9e5",
+                        "outline-variant": "#c3c6d7",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf8ff",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#faf8ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "margin": "32px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Space Grotesk"],
+                        "body-lg": ["Space Grotesk"],
+                        "label-sm": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"],
+                        "h1": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest border-b border-outline-variant sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-on-surface">AI IT Services</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-medium">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Services</a>
+<a class="text-primary border-b-2 border-primary pb-1" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Case Studies</a>
+</nav>
+<button class="bg-primary text-on-primary px-5 py-2.5 text-label-sm rounded-lg transition-all duration-200 active:scale-95 shadow-sm">Get a Consultation</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-margin py-xl">
+<!-- Hero Section -->
+<section class="mb-xl text-center md:text-left">
+<p class="text-label-sm font-bold text-primary tracking-widest uppercase mb-base">SECTOR SPECIALIZATION</p>
+<h1 class="text-h1 font-h1 text-on-surface mb-md max-w-3xl leading-tight">Applied Intelligence for Mission-Critical Industries</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">We bridge the gap between complex AI research and practical enterprise application, delivering custom IT frameworks that drive measurable ROI across global sectors.</p>
+</section>
+<!-- Industry Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Healthcare -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col justify-between hover:border-primary transition-all group shadow-sm">
+<div>
+<div class="flex justify-between items-start mb-md">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="health_and_safety">health_and_safety</span>
+<span class="text-label-sm px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full">Active Deployment</span>
+</div>
+<h3 class="text-h2 font-h2 mb-sm">Healthcare</h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mb-md">Integrating AI-driven workflow automation to reduce clinician burnout and enhance patient throughput by 40%. Our HIPAA-compliant frameworks handle complex medical data scheduling and diagnostic support.</p>
+</div>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-low text-on-surface-variant px-3 py-1 text-xs font-semibold rounded-full uppercase tracking-wider">Workflow Automation</span>
+<span class="bg-surface-container-low text-on-surface-variant px-3 py-1 text-xs font-semibold rounded-full uppercase tracking-wider">HIPAA Compliant</span>
+<span class="bg-surface-container-low text-on-surface-variant px-3 py-1 text-xs font-semibold rounded-full uppercase tracking-wider">Diagnostic AI</span>
+</div>
+</div>
+<!-- Finance -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:border-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary mb-md" data-icon="account_balance">account_balance</span>
+<h3 class="text-h3 font-h3 mb-sm">Finance</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-lg">Next-gen fraud detection systems utilizing real-time anomaly detection and neural networks to secure digital assets and prevent illicit transactions.</p>
+<div class="border-l-4 border-primary pl-md py-2 bg-primary/5 rounded-r-lg">
+<p class="text-label-sm font-bold text-primary">INSIGHT</p>
+<p class="text-body-md font-medium">99.8% detection accuracy achieved for Tier-1 Banks.</p>
+</div>
+</div>
+<!-- Logistics -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:border-primary transition-all overflow-hidden shadow-sm">
+<div class="w-full h-40 bg-surface-container-low mb-md overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="A sophisticated logistics dashboard showing a complex map of the world with glowing lines representing shipping routes and data nodes. The aesthetic is clean and corporate, featuring a high-contrast dark blue and light gray palette with subtle neon blue highlights indicating active cargo movement. Soft, directional light creates a sense of depth and modern efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZIsFm73-NJzt1nCvuxEWh82zaWxNHVgT57LFU0L4DS9qsDFWJ4PCUmKdMCbqEt10krLjc5wAN-w__NzlN6btbeCbta4ghbFpzBMignj5FbiFecfo4NUw8NUWuVNkxtc9WFzZ1qAgfXmTZvQ6OwAjlDAe8xKWXsEBYLX9WeUGii3y0wQBHrtD3r7N9AOPGSeN5762v2CDK1FowGHGqp9fv3bn1J74SKkOfZisS1OdP7jI0RKKflp1sAIQk5bmRZDVviVoL85s4wk2W"/>
+</div>
+<h3 class="text-h3 font-h3 mb-sm">Logistics</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Intelligent route optimization and supply chain visibility using predictive modeling to reduce fuel consumption and delivery latency.</p>
+</div>
+<!-- Manufacturing -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col md:flex-row gap-lg hover:border-primary transition-all shadow-sm">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-md" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h3 class="text-h2 font-h2 mb-sm">Manufacturing</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md">Implementing predictive maintenance sensors and AI vision for quality control. We help factories transition to Industry 4.0 standards with low-latency edge computing.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-body-md font-medium"><span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span> 25% Reduction in downtime</li>
+<li class="flex items-center gap-2 text-body-md font-medium"><span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span> Real-time sensor integration</li>
+</ul>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of a high-tech robotic assembly arm in a pristine, modern manufacturing facility. The scene is brightly lit with cool-toned industrial lighting, emphasizing the metallic textures and precision engineering of the machinery. The background is a soft-focus blur of white and slate-gray laboratory surfaces, conveying a sense of sterile, technological sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAOkikUDTZv5_Rw5HVBVK0JsD676TgA6-GSv_LP6nwCko6u9bqr-PfAdmqqVCSkIUG9Vbll1OkVbKVsXyd__m_ofFiIg4GNLDK-5g9OURD7KVpVt-EluGGJVkoLS6a-pUoBqbb_u9sLTl1N_za4UUjTjXKch152YUZfzXQ-O6wjwdyqzXcdp8xCUl8TEeVd5odPEwsxgExo2jdE0qQTc8JUcO7bX4vC61ZttuXwVY2mzkLOcURCUUHZ6yvd1ZuOsd8xawBbCk2Zyhn"/>
+</div>
+</div>
+<!-- Retail -->
+<div class="md:col-span-6 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:border-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary mb-md" data-icon="shopping_bag">shopping_bag</span>
+<h3 class="text-h3 font-h3 mb-sm">Retail</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md">Personalized recommendation systems and dynamic pricing engines that leverage deep learning to understand consumer behavior and inventory cycles.</p>
+<div class="flex items-center gap-4 py-md border-t border-outline-variant">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-surface-container border-2 border-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border-2 border-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full bg-surface-dim border-2 border-surface-container-lowest"></div>
+</div>
+<p class="text-xs text-on-surface-variant font-medium">Trusted by 50+ Global Retailers</p>
+</div>
+</div>
+<!-- Energy -->
+<div class="md:col-span-6 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:border-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary mb-md" data-icon="bolt">bolt</span>
+<h3 class="text-h3 font-h3 mb-sm">Energy</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-md">Grid usage optimization and renewable energy forecasting. Our AI models predict load demands to balance sustainable energy distribution across smart grids.</p>
+<button class="flex items-center gap-2 text-label-sm font-bold text-primary hover:underline">
+                    View Energy Whitepaper <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Call to Action -->
+<section class="mt-xl bg-primary-container p-xl text-on-primary-container rounded-2xl flex flex-col md:flex-row justify-between items-center gap-lg shadow-lg">
+<div class="max-w-xl">
+<h2 class="text-h2 font-h2 mb-base">Ready to transform your sector?</h2>
+<p class="text-body-md font-body-md opacity-90">Partner with our engineers to build bespoke AI solutions tailored to your unique industry challenges.</p>
+</div>
+<button class="bg-on-primary-container text-primary-container px-lg py-4 text-label-sm font-bold rounded-xl whitespace-nowrap active:scale-95 transition-all shadow-sm">Talk to an Industry Expert</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl px-margin py-16 max-w-7xl mx-auto text-sm">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-bold text-on-surface">AI IT Services</span>
+<p class="text-on-surface-variant leading-relaxed">Engineering the future of enterprise intelligence through robust IT infrastructure and ethical AI implementation.</p>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-bold text-on-surface mb-2 uppercase tracking-widest text-xs">Company</p>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-primary font-bold" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Case Studies</a>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-bold text-on-surface mb-2 uppercase tracking-widest text-xs">Legal</p>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-bold text-on-surface mb-2 uppercase tracking-widest text-xs">Newsletter</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-low border border-outline-variant px-4 py-2 w-full rounded-lg focus:outline-none focus:border-primary text-on-surface" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold transition-colors duration-200">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin py-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-xs font-medium">© 2024 AI IT Services. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer text-xl">public</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer text-xl">hub</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer text-xl">share</span>
+</div>
+</div>
+</footer>
+</body></html>
